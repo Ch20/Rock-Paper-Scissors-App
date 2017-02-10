@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RockPaperScissors</string>
+    <string name="HumanChoice">Your Choice</string>
+    <string name="ComputerChoice">Computer Choice</string>
+    <string name="Score">Score: You 0 Computer 0</string>
+    <string name="rockButton">Rock</string>
+    <string name="paperButton">Paper</string>
+    <string name="scissorsButton">Scissors</string>
+    <string name="tv_computerChoice">Computer Choice</string>
+</resources>

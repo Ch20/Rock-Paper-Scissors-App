@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.chamath.rockpaperscissors.MainActivity">
+
+    <TextView
+        android:text="@string/Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Score"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/iv_humanChoice"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/scissorsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_scissors"
+        android:layout_alignBaseline="@+id/b_paper"
+        android:layout_alignBottom="@+id/b_paper"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/paperButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_paper"
+        android:layout_alignBaseline="@+id/b_rock"
+        android:layout_alignBottom="@+id/b_rock"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        app:srcCompat="@drawable/rock"
+        android:id="@+id/iv_humanChoice"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_humanChoice"
+        android:layout_alignStart="@+id/iv_computerChoice" />
+
+    <Button
+        android:text="@string/rockButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/b_rock"
+        android:elevation="0dp"
+        android:layout_below="@+id/tv_Score"
+        android:layout_toStartOf="@+id/iv_humanChoice" />
+
+    <TextView
+        android:text="@string/HumanChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_humanChoice"
+        android:textSize="40sp"
+        android:textColor="@android:color/background_dark"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/iv_computerChoice"
+        android:layout_alignStart="@+id/iv_computerChoice" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/paper"
+        android:id="@+id/iv_computerChoice"
+        android:layout_below="@+id/tv_computerChoice"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ComputerChoice"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="40sp"
+        android:textColor="@android:color/background_dark"
+        android:text="@string/tv_computerChoice"
+        android:id="@+id/tv_computerChoice"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
